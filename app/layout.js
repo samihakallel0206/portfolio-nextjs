@@ -1,5 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "../style/globals.css";
+// import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
+import BarreDeNav from "@/components/BarreDeNav";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,8 +22,21 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        />
+        <link
+          rel="icon"
+          href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrT3F63P8GltZSSWYWhPJrxuTHo_QagFSkf2JJSCb-ikgKS35j8kUB-N-TDdywXE-GGSk&usqp=CAU"
+        />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <BarreDeNav/>
+        {/* <NavBar /> */}
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
