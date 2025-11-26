@@ -35,4 +35,11 @@ export const projectData = [
       "Clone simple de l'interface utilisateur de Twitter, créé avec TailwindCSS et Vue Js. Ce clone couvre uniquement la page d'accueil de l'interface. Il est idéal pour débuter avec TailwindCSS, car il permet de comprendre les concepts de base.",
     gitHubLink: "",
   },
+  {
+    id: 6,
+    title: "Twitter UI Clone",
+    description:
+      "Clone simple de l'interface utilisateur de Twitter, créé avec TailwindCSS et Vue Js. Ce clone couvre uniquement la page d'accueil de l'interface. Il est idéal pour débuter avec TailwindCSS, car il permet de comprendre les concepts de base.",
+    gitHubLink: "",
+  },
 ];
